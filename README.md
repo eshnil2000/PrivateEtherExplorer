@@ -20,3 +20,5 @@ This project is inspired from etherscan.io
  
 4. For first time there will not be any block data. So please click 'Get blocks from Chain' button on Block List Page.
    It will take some time so be patient.   
+
+5. Changed "serverConfig.js" to point IP address to 127.0.0.1. Assume this explorer is run from the same machine as the geth node
