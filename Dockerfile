@@ -1,4 +1,7 @@
-from node:8.11.1
+#from node:8.11.1
+
+from node:8.14.0-alpine
+RUN apk add --no-cache git
 
 # Create app directory
 WORKDIR /usr/src/app

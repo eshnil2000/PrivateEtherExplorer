@@ -9,7 +9,7 @@ services:
           - 8545:8545
     
     private-ether-explorer:
-        image: eshnil2000/private-ether-explorer
+        image: eshnil2000/private-eth-explorer
         networks:
           ganache-cli:
             ipv4_address: "172.13.0.3"
