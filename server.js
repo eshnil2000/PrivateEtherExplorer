@@ -37,6 +37,10 @@ if (!serverConfig.ChainIpAddr) {
 }
 else {
     var privateNodeUrl = "http://" + serverConfig.ChainIpAddr + ":" + serverConfig.ChainPortNo;
+    console.info("url is:", privateNodeUrl);
+    //var test="http://172.13.0.2:8545";
+    //console.info("test is ", test);
+    //web3 = new Web3(new Web3.providers.HttpProvider(test));
     web3 = new Web3(new Web3.providers.HttpProvider(privateNodeUrl));
 
     var server = app.listen(process.env.PORT || serverConfig.WebPortNo, function () {

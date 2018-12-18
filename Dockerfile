@@ -1,9 +1,9 @@
-from node:8.11.1-alpine
+from node:8.11.1
 
 # Create app directory
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY ./package*.json ./
 
 RUN npm install
 # If you are building your code for production

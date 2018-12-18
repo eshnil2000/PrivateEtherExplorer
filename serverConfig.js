@@ -6,7 +6,7 @@
 
 const config = {
     ChainPortNo: 8545,
-    ChainIpAddr: "127.0.0.1", // IP address of the system running private ethereum chain
+    ChainIpAddr: "172.13.0.2", // IP address of the system running private ethereum chain
     WebPortNo: 8546
 };
 

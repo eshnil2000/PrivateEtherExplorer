@@ -1,0 +1,25 @@
+version: "2"
+services:
+    dappsuni-ganache-cli:
+        image: eshnil2000/dappsuni-ganache-cli
+        networks:
+          ganache-cli:
+            ipv4_address: "172.13.0.2"
+        ports:
+          - 8545:8545
+    
+    private-ether-explorer:
+        image: eshnil2000/private-ether-explorer
+        networks:
+          ganache-cli:
+            ipv4_address: "172.13.0.3"
+        ports:
+          - 8546:8546
+
+networks:
+  ganache-cli:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet: "172.13.0.0/16"
